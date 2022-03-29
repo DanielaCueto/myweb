@@ -1,5 +1,6 @@
 
 body{
+   
     margin: 0;
     padding: 0;
     background: #C9D6FF;  /* fallback for old browsers */
@@ -34,4 +35,9 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: #000; 
 }
