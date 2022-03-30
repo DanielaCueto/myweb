@@ -67,9 +67,10 @@ body{
 
 
 .list{
-  width: 40%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 2em;
   font-family: 'Inspiration', cursive;
   font-family: 'Rock 3D', cursive;
@@ -78,10 +79,8 @@ body{
 
 
 .list__item{
-  font-weight: 400;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  margin: 0 5%;
+  
 }
 
 
