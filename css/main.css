@@ -1,113 +1,103 @@
-*{
+* {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  
 }
 
-
-
-body{
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:Arial, Helvetica, sans-serif;
-  background-color:aliceblue;
+  font-family: "Barriecito", cursive;
   color: #222;
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(48, 100%, 51%, 1) 0%,
+    hsla(78, 84%, 32%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFCE06", endColorstr="#6C960D", GradientType=1 );
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 2rem ;
+  padding-bottom: 0;
+}
 
-.header{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    padding: 10px;
+.theme-toggle{
+  margin: 2rem;
 }
 
 .title {
-  
   text-align: center;
-  font-family: 'Inspiration', cursive;
-  font-family: 'Rock 3D', cursive;
+  font-family: "Barriecito", cursive;
   font-size: 4em;
-  
-  
 }
 
-
-
-.main{
+.main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: space-around;
   line-height: 3rem;
-  
 }
 
-.main__aboutme{
-  
+.main__aboutme {
   width: 70%;
   font-size: 2em;
-  text-align:justify;
-  margin-bottom: 6rem;
+  text-align: justify;
+  margin-bottom: 2rem;
   flex-shrink: 1;
-
-  
 }
 
-
-.list{
-  width: 50%;
+.list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 2em;
-  font-family: 'Inspiration', cursive;
-  font-family: 'Rock 3D', cursive;
+  padding-bottom: 10px;
 }
 
-
-
-.list__item{
-  margin: 0 5%;
-  
+.list__item {
+  margin: 0.5rem 1rem;
 }
 
-.buttonmode{
+.buttonmode {
   font-size: 25px;
   background-color: #222;
-  mask-image: url('/images-logos/moon-stars-solid.svg');
-  -webkit-mask-image: url('/images-logos/moon-stars-solid.svg');
+  mask-image: url("/images-logos/moon-stars-solid.svg");
+  -webkit-mask-image: url("/images-logos/moon-stars-solid.svg");
   width: 50px;
   height: 50px;
   border: none;
-  margin: 4rem 0; 
+  margin: 4rem 0;
   cursor: pointer;
 }
 
 /**/
 
-.darkmode{
-  background-color: #222;
-  color: aliceblue;
+.darkmode {
+  background: #222;
+  color: #e3dac9;
 }
-.darkmode img{
+.darkmode img {
   filter: invert();
 }
-.darkmode .buttonmode{
-  background-color: aliceblue;
-  mask-image: url('/images-logos/sun-solid.svg');
-  -webkit-mask-image: url('/images-logos/sun-solid.svg');
+.darkmode .buttonmode {
+  background-color: #e3dac9;
+  mask-image: url("/images-logos/sun-solid.svg");
+  -webkit-mask-image: url("/images-logos/sun-solid.svg");
 }
-
-
-
+.darkmode .list__item img {
+  filter: invert(75%) sepia(1%) saturate(3686%) hue-rotate(355deg) brightness(101%) contrast(135%);
+}
