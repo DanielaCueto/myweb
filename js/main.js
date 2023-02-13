@@ -11,8 +11,10 @@ function clickedButton(){
 }
 
 const isDarkMode = localStorage.getItem('darkmode')
+
 if(isDarkMode === 'true'){
     body.classList.add('darkmode');
+    button.checked = true;
 }
 
 
